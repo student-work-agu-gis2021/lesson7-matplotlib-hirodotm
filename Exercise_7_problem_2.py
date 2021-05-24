@@ -36,7 +36,8 @@ print(len(data))
 # - Store the selection in a new variable `selection`
 
 # YOUR CODE HERE 2
-
+#pick up the limited data to selection
+selection=data.loc[(data.index>='19880101')&(data.index<='20181231')]
 # Check that the data was read in correctly:
 selection.head()
 
