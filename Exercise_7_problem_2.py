@@ -48,9 +48,13 @@ print("Number of rows:", len(selection))
 # ### Part 3
 # 
 # #### Part 3.1
-# 
 # Create a line plot that displays the temperatures (`TEMP_C`) for yeach month in the 30 year time period:
-#      
+ax=selection.plot.line(figsize=(14,6),y='TEMP_C',title='Helsinki-Vantaa Airport',c='black',marker='o',markersize=3)
+ax.grid()
+ax.set_xlabel('Time')
+ax.set_ylabel('Temperature (Celsius)')
+plt.show()
+
 # #### Part 3.2
 # 
 # Save your figure as PNG file called `temp_line_plot.png`.
