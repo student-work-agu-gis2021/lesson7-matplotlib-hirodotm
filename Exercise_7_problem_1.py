@@ -34,7 +34,7 @@ assert len(data) == 1000, "There should be 1000 rows of data."
 
 # YOUR CODE HERE 2 to set colors
 #make the random number as colors
-colors=np.random.rand(1000,1)
+colors=np.random.rand(1000)
 # This test print should print out 10 first numbers in the variable colors
 print(colors[0:10])
 
@@ -47,18 +47,26 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 # #### Part 3.1
 # 
 # Create a scatter plot of points with random colors
-# 
+ax=data.plot.scatter('x','y',s=50,c=colors,colormap='rainbow',edgecolor='black')
 # #### Part 3.2
 # 
+#make variable for title, xlabel and ylabel
+import matplotlib.pyplot as plt
+title='My random candy points'
+xlabel='X-label'
+ylabel='Y-label'
 # #### Part 3.3
 # 
 
 # Plot a scatter plot
 # YOUR CODE HERE 3
-
 # Add labels and title
 # YOUR CODE HERE 4
-
+#add the title, xlabel and ylabel to the graph
+ax.set_title(title)
+ax.set_xlabel(xlabel)
+ax.set_ylabel(ylabel)
+plt.show()
 # Save the plot as a png file:
 outputfp = "my_first_plot.png"
 
