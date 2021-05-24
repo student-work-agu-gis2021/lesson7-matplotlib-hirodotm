@@ -19,7 +19,9 @@ import numpy as np
 import pandas as pd
 
 # YOUR CODE HERE 1 to set data
-
+#make the random number in xy and make dataframe
+xy=np.random.rand(1000,2)
+data=pd.DataFrame(xy,columns=['x','y'])
 # Check your random values
 print(data.head())
 
