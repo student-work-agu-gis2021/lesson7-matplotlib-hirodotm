@@ -66,7 +66,7 @@ ylabel='Y-label'
 ax.set_title(title)
 ax.set_xlabel(xlabel)
 ax.set_ylabel(ylabel)
-plt.show()
+
 # Save the plot as a png file:
 outputfp = "my_first_plot.png"
 
